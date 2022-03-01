@@ -11,4 +11,6 @@ Prerequisite: run setup.sh to create virtual environment with pillow installed
   
 2. Set the pdf_name variable. e.g. "comic_" this will create PDFs named "comic_01.pdf", "comic_02.pdf"
 3. Set the low_power_variable to True or False. I had some issues with my machine locking up when ran on a loop. 
-  3a. low_power_mode will limit the process to 1 pdf. Just run it again to do the next one and so on.    
+  3a. low_power_mode will limit the process to 1 pdf. Just run it again to do the next one and so on.   
+  3b. The "files.txt" records the progress, so if there is a crash it can pick up where it left off
+  3c. The "files.txt" will also make the re-running in low_power_mode so simple, that it's just a case of kicking off again
